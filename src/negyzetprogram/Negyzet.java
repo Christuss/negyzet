@@ -26,6 +26,11 @@ public class Negyzet {
         this.k = k;
     }
 
+    public int getOldal() {
+        return oldal;
+    }
+    
+
     @Override
     public String toString() {
         return "Negyzet{" + "k=" + k + ", oldal=" + oldal + '}';

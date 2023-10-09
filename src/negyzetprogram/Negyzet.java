@@ -26,4 +26,9 @@ public class Negyzet {
         this.k = k;
     }
 
+    @Override
+    public String toString() {
+        return "Negyzet{" + "k=" + k + ", oldal=" + oldal + '}';
+    }
+
 }

@@ -36,4 +36,25 @@ public class Negyzet {
         return "Negyzet{" + "k=" + k + ", oldal=" + oldal + '}';
     }
 
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 37 * hash + this.oldal;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Negyzet other = (Negyzet) obj;
+        return this.oldal == other.oldal;
+    }
 }
